@@ -23,7 +23,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       - name: Make gradlew executable
-        run: chmod +ux ./gradlew
+        run: chmod +x ./gradlew
 
       - name: Execute Gradle command - assembleDebug
         run: ./gradlew assembleDebug
